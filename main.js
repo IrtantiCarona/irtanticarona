@@ -1,5 +1,5 @@
 var typeWriterElement = document.getElementById('typewriter');
-var textArray = ["Irtanti Karmina Carona", "A Beta Version", "Data Scientist"]; 
+var textArray = ["machine learning engineer", "entrepreneur", "writer"]; 
 function delWriter(text, i, cb) {
 	if (i >= 0 ) {
 		typeWriterElement.innerHTML = text.substring(0, i--);
