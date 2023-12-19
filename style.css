@@ -10,14 +10,13 @@ font-family: 'Poppins', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
-ul{
-    list-style: none;
-}
-h1{
+
+.desc-profile h1{
     font-family: 'Poppins', sans-serif; 
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
+
 a {
     font-size: 20px;
 }
@@ -36,117 +35,178 @@ header {
     justify-content: flex-start;
     align-items: center;
 }
+
+.profile img{
+    width: 190px;
+    height: 190px;
+}
+
+.desc-profile{
+    margin: 0 30px;
+}
+
 .desc-profile h3, p{
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.3rem;
+    font-size: 25px;
 }
-.profile img{
-    width: 22%;
-    height: 32%;
+
+.social ul{
+    list-style: none;
 }
+.social li a{
+    font-size: 18px;
+    color: black;
+    font-family: 'Anonymous Pro', monospace;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social li a:hover{
+    text-decoration: underline;
+}
+
 .social li{
     display: flex;
     align-items: center;
     line-height: 5vh;
     font-family: 'Anonymous Pro', monospace !important;
 }
+
 .social img{
-    width: 7%;
-    height: 10%;
-    margin-right: 2%;
+    width: 22px;
+    height: 26px;
+    margin-right: 4%;
 }
 
 /* Main */
 main{
     margin: 0 70px;
 }
-.about h1, .news h1, .medium-header h1{
-    font-size: 1.9rem;
+.about h1, .medium-post h1, .news h1{
+    font-size: 2rem;
+    font-weight: 600;
 }
-.about a{
+.about-content a{
     color: #0057FF;
 }
-.about p, a{ 
-    font-size: 1.4rem;
+.about-content p, a{ 
+    font-size: 1.5rem;
     text-align: justify;
-    color: rgb(80, 80, 80);
+    color: black;
+    opacity: 75%;
     font-family: 'DM Sans', sans-serif;
+    line-height: 110%;
 }
 
-/* News and Medium */
-.news-medium{
+.about-content {
     margin-top: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-.news li{
-    list-style: disc;
-    margin-left: 35px;
-    font-size: 1.3rem;
-    line-height: 5vh;
-    font-family: 'DM Sans', sans-serif;
-}
-.medium{
-    width: 45%;
-}
-#medium-desc{
-    margin-top: 4px;
-    margin-bottom: 20px;
 }
 
-#medium-judul a{
-    color: #0057FF;
-    font-size: 1.6rem;
+/* Medium */
+.medium-thumbnail{
+    width: 480px;
+    height: 180px;
 }
+
+.medium-article a{
+    font-size: 1.2rem;
+    color: #463B3B;
+    font-weight: bold;
+}
+
+.medium-article button{
+    padding: 8px 15px;
+    border-radius: 100px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.medium-title{
+    margin-top: 2%;
+    font-size: 1.5rem;
+    line-height: 110%;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.medium-article button:hover{
+    background-color: #5b90fa;
+    color: white;
+}
+
+/* News */
+.news p{
+    font-size: 1.5rem;
+    opacity: 85%;
+    color: black;
+}
+
+.news a{
+    color: #FF0000;
+    opacity: 85%;
+}
+
+.news i{
+    font-weight: bold;
+}
+
 /* footer */
 footer{
     background-color: black;
     opacity: 90%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 13%;
+    height: 10%;
 }
+
 footer p{
     color: white;
+    font-size: 1.3rem;
 }
 
 /* Media Query for Mobile */
-@media screen and (max-width: 1001px){
-    .desc-profile h3, p{
-        font-size: 1.5rem;
-    }
-    .social{
-        margin-top: 10px;
-    }
-    .social li{
-        line-height: 5vh;
-    }
-    .medium{
-        width: 100vw;
-        margin-top: 20px;
-    }
-    #medium-judul a{
-        font-size: 1.5rem;
-    }
-
-    #medium-desc{
-        font-size: 1.2rem;
-    }
-
-    footer p{
-        font-size: 1rem;
-    }
+@media screen and (max-width: 1000px){
     header{
         flex-wrap: wrap;
     }
 
-    .profile{
-        flex-wrap: wrap;
+    .desc-profile h1 {
+        font-size: 2.2rem;
     }
-    .news-medium{
-        flex-wrap: wrap;
+
+    .desc-profile h3{
+        font-size: 1.2rem;
+    }
+
+    .social li a{
+        font-size: 1rem;
+    }
+
+    .social img{
+        width: 18px;
+        height: 22px;
+    }
+
+    .about h1, .medium-post h1, .news h1{
+        font-size: 1.8rem;
+    }
+
+    .about-content p, a{ 
+        font-size: 1.2rem;
+    }
+
+    .medium-title{
+        font-size: 1.2rem;
+    }
+
+    .medium-article a{
+        font-size: 1rem;
+    }
+
+    .news p{
+        font-size: 1.2rem;
+    }
+    
+    footer p{
+        color: white;
+        font-size: 1rem;
     }
 }
